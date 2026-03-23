@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Heart, Star } from 'lucide-react';
-import type { Listing } from '../../types';
-import { useFavorites } from '../../context/FavoritesContext';
+import type { Listing } from '../types';
+import { useFavorites } from '../context/FavoritesContext';
 
 interface ListingCardProps {
   listing: Listing;

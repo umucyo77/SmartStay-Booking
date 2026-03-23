@@ -1,8 +1,8 @@
-import { useBookingStore } from '../store/useBookingStore';
-import { useAuthStore } from '../store/useAuthStore';
 import { useNavigate } from 'react-router-dom';
 import { Calendar, Users, X, CheckCircle, Clock, XCircle, Lock, Home } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { useBookingStore } from '../store/useBookingStore';
+import { useAuthStore } from '../store/useAuthStore';
 
 const statusConfig = {
   confirmed: { icon: CheckCircle, color: 'text-green-500', bg: 'bg-green-50', label: 'Confirmed' },

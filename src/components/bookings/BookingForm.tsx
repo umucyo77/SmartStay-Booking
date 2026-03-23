@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Calendar, Users } from 'lucide-react';
-import { useBookingStore } from '../../store/useBookingStore';
-import { useAuthStore } from '../../store/useAuthStore';
-import type { Listing } from '../../types';
 import toast from 'react-hot-toast';
+import { useBookingStore } from '../store/useBookingStore';
+import { useAuthStore } from '../store/useAuthStore';
+import type { Listing } from '../types';
 
 interface BookingFormProps {
   listing: Listing;

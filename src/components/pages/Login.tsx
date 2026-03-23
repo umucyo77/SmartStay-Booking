@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { useAuthStore } from '../store/useAuthStore';
+
 import toast from 'react-hot-toast';
+import { useAuthStore } from '../store/useAuthStore';
 
 export default function Login() {
   const [isSignUp, setIsSignUp] = useState(false);

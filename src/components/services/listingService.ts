@@ -1,6 +1,7 @@
 import api from './api';
-import { transformListings } from '../utils/transformers';
+
 import type { Listing } from '../types';
+import { transformListings } from '../utils/transformers';
 
 export async function fetchListings(
   location: string = 'Paris'

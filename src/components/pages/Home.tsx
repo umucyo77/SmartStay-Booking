@@ -1,11 +1,12 @@
 import { useMemo } from 'react';
 import { useListings } from '../hooks/useListings';
-import { useFilters } from '../context/FiltersContext';
-import ListingCard from '../components/listings/ListingCard';
-import FilterPanel from '../components/listings/FilterPanel';
-import Loader from '../components/ui/Loader';
-import ErrorState from '../components/ui/ErrorState';
+
 import { MapPin, Landmark, Building2, Trees, Globe } from 'lucide-react';
+import { useFilters } from '../context/FilterContext';
+import FilterPanel from '../listings/FilterPanel';
+import Loader from '../ui/Loader';
+import ErrorState from '../ui/ErrorState';
+import ListingCard from '../listings/ListingCard';
 
 const POPULAR_DESTINATIONS = [
   { name: 'Paris', placeId: 'ChIJD7fiBh9u5kcRYJSMaMOCCwQ', icon: Landmark },

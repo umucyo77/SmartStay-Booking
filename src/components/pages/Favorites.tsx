@@ -1,7 +1,7 @@
-import { useFavorites } from '../context/FavoritesContext';
-import ListingCard from '../components/listings/ListingCard';
 import { useNavigate } from 'react-router-dom';
 import { Heart } from 'lucide-react';
+import { useFavorites } from '../context/FavoritesContext';
+import ListingCard from '../listings/ListingCard';
 
 export default function Favorites() {
   const { favorites } = useFavorites();

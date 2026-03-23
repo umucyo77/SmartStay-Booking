@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Search } from 'lucide-react';
-import { useFilters } from '../../context/FiltersContext';
+import { useFilters } from '../context/FilterContext';
+
 
 export default function SearchBar() {
   const { filters, setFilters } = useFilters();

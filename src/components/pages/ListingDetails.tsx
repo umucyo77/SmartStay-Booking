@@ -1,13 +1,14 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Star, MapPin, Users, Bed, Bath, Wifi, Award, Heart } from 'lucide-react';
 import { useListingDetails } from '../hooks/useListingDetails';
-import BookingForm from '../components/bookings/BookingForm';
-import Loader from '../components/ui/Loader';
-import ErrorState from '../components/ui/ErrorState';
-import { useFavorites } from '../context/FavoritesContext';
+
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
+import L from "leaflet";
+import { useFavorites } from '../context/FavoritesContext';
+import Loader from '../ui/Loader';
+import ErrorState from '../ui/ErrorState';
+import BookingForm from '../bookings/BookingForm';
 
 const markerIcon = new L.Icon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',

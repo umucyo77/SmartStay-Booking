@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchListingById } from '../services/listingsService';
+import { fetchListingById } from '../services/listingService';
+
 
 export function useListingDetails(id: string) {
   return useQuery({

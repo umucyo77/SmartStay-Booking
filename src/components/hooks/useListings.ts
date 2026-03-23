@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchListings } from '../services/listingsService';
+import { fetchListings } from '../services/listingService';
+
 
 export function useListings(placeId?: string) {
   return useQuery({
