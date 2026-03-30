@@ -2,11 +2,12 @@ import { useMemo } from 'react';
 import { useListings } from '../hooks/useListings';
 
 import { MapPin, Landmark, Building2, Trees, Globe } from 'lucide-react';
-import { useFilters } from '../context/FilterContext';
+import { useFilters } from '../context/useFilters';
 import FilterPanel from '../listings/FilterPanel';
 import Loader from '../ui/Loader';
 import ErrorState from '../ui/ErrorState';
 import ListingCard from '../listings/ListingCard';
+import Navbar from '../layout/NavBar';
 
 const POPULAR_DESTINATIONS = [
   { name: 'Paris', placeId: 'ChIJD7fiBh9u5kcRYJSMaMOCCwQ', icon: Landmark },
@@ -37,7 +38,8 @@ export default function Home() {
 
   return (
     <div>
-      <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden mb-6 sm:mb-8 bg-gradient-to-br from-rose-500 via-rose-400 to-orange-300 px-6 sm:px-8 py-10 sm:py-16 text-white">
+      <Navbar />
+      <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden mb-6 sm:mb-8 bg-linear-to-br from-blue-500 via-blue-400 to-blue-500 px-6 sm:px-8 py-10 sm:py-16 text-white">
         <div className="relative z-10 max-w-lg">
           <h1 className="text-3xl sm:text-4xl font-bold mb-2 sm:mb-3 leading-tight">
             Find your perfect stay
@@ -65,8 +67,8 @@ export default function Home() {
                 onClick={() => setFilters({ location: dest.placeId, searchQuery: '' })}
                 className={`flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full border text-xs sm:text-sm font-medium whitespace-nowrap transition-all ${
                   activePlaceId === dest.placeId
-                    ? 'bg-rose-500 text-white border-rose-500 shadow-md'
-                    : 'bg-white text-gray-600 border-gray-200 hover:border-rose-300 hover:text-rose-500'
+                    ? 'bg-blue-500 text-white border-blue-500 shadow-md'
+                    : 'bg-white text-gray-600 border-gray-200 hover:border-rose-300 hover:text-blue-500'
                 }`}
               >
                 <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />

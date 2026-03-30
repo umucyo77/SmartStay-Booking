@@ -5,7 +5,7 @@ interface ErrorStateProps {
 
 export default function ErrorState({ message, onRetry }: ErrorStateProps) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[400px] gap-4 px-4">
+    <div className="flex flex-col items-center justify-center min-h-100 gap-4 px-4">
       <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center">
         <svg className="w-8 h-8 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}

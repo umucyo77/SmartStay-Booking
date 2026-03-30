@@ -37,7 +37,7 @@ export default function Login() {
     <div className="min-h-[80vh] flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-          <div className="bg-gradient-to-br from-rose-500 to-rose-600 px-8 py-10 text-center">
+          <div className="bg-linear-to-br from-blue-400 to-blue-600 px-8 py-10 text-center">
             <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
               <span className="text-rose-500 font-bold text-2xl">S</span>
             </div>
@@ -48,7 +48,7 @@ export default function Login() {
             <button
               onClick={() => setIsSignUp(false)}
               className={`flex-1 py-4 text-sm font-semibold transition-colors ${
-                !isSignUp ? 'text-rose-500 border-b-2 border-rose-500' : 'text-gray-400 hover:text-gray-600'
+                !isSignUp ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-400 hover:text-gray-600'
               }`}
             >
               Login
@@ -56,7 +56,7 @@ export default function Login() {
             <button
               onClick={() => setIsSignUp(true)}
               className={`flex-1 py-4 text-sm font-semibold transition-colors ${
-                isSignUp ? 'text-rose-500 border-b-2 border-rose-500' : 'text-gray-400 hover:text-gray-600'
+                isSignUp ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-400 hover:text-gray-600'
               }`}
             >
               Sign up
@@ -82,13 +82,13 @@ export default function Login() {
                   className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-700 outline-none focus:border-rose-400 transition-colors" />
               </div>
               <button type="submit"
-                className="w-full bg-rose-500 hover:bg-rose-600 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm mt-2">
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3.5 rounded-xl transition-colors text-sm mt-2">
                 {isSignUp ? 'Create account' : 'Login'}
               </button>
             </form>
             <p className="text-center text-xs text-gray-400 mt-6">
               By continuing, you agree to our{' '}
-              <Link to="/" className="text-rose-500 hover:underline">Terms of Service</Link>
+              <Link to="/" className="text-blue-500 hover:underline">Terms of Service</Link>
             </p>
           </div>
         </div>

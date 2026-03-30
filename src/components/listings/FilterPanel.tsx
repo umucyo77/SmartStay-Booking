@@ -1,5 +1,5 @@
 import { SlidersHorizontal, X } from 'lucide-react';
-import { useFilters } from '../context/FilterContext';
+import { useFilters } from '../context/useFilters';
 
 export default function FilterPanel() {
   const { filters, setFilters, resetFilters } = useFilters();

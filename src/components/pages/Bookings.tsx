@@ -3,6 +3,7 @@ import { Calendar, Users, X, CheckCircle, Clock, XCircle, Lock, Home } from 'luc
 import toast from 'react-hot-toast';
 import { useBookingStore } from '../store/useBookingStore';
 import { useAuthStore } from '../store/useAuthStore';
+import Navbar from '../layout/NavBar';
 
 const statusConfig = {
   confirmed: { icon: CheckCircle, color: 'text-green-500', bg: 'bg-green-50', label: 'Confirmed' },
@@ -40,6 +41,7 @@ export default function Bookings() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <Navbar />
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-gray-900">Your bookings</h1>
         <p className="text-gray-400 text-sm mt-1">

@@ -23,7 +23,7 @@ function App() {
         <Route path='/' element={<Layout />}></Route>
         <Route index element={<Home />}></Route>
         <Route path='listing/:id' element={<ListingDetails />}></Route>
-        <Route path='favorite' element={<Favorites />}></Route>
+        <Route path='favorites' element={<Favorites />}></Route>
         <Route path='login' element={<Login />}></Route>
         <Route path='bookings' element={
           <ProtectedRoute>
